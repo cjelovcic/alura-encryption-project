@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="./js/app.js" defer></script>
+    <title>ENIGMA</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/images/logo.png" alt="Logo de Encryptify" class="header__logo-image">
+            </a>
+        </header>
+        <main class="main">
+            <section class="encrypt">
+                <h2 class="encrypt__title main__title">Encriptar</h2>
+                <div class="encrypt__textarea-container">
+                    <span class="encrypt__char-count" id="charCount">500 / <span class="encrypt__char-count--highlight">0</span></span>
+                    <textarea class="encrypt__textarea-input textarea__input" maxlength="500" id="textareaEncrypt" placeholder="Ningún texto ingresado"></textarea>
+                    <span class="encrypt__textarea-notice">
+                        <i class='bx bxs-info-circle'></i> Solo letras minúsculas y sin acentos
+                    </span>
+                </div>
+
+                <div class="encrypt__actions">
+                    <button type="button" class="encrypt__button encrypt__button--paste">
+                        <span class="encrypt__button-icon">
+                            <i class='bx bxs-paste' ></i>
+                        </span>
+                    </button>
+                    <button type="button" class="encrypt__button encrypt__button--encrypt">
+                        <span class="encrypt__button-text">Encriptar</span>
+                    </button>
+                </div>
+            </section>
+            <section class="decrypt">
+                <h2 class="decrypt__title main__title">Mensaje</h2>
+                <textarea class="decrypt__textarea textarea__input" id="textareaDecrypt" maxlength="500"></textarea>
+
+                <div class="decrypt__actions">
+                    <button type="button" class="decrypt__button decrypt__button--decrypt">
+                        <span class="decrypt__button-text">Desencriptar</span>
+                    </button>
+                    <button type="button" class=" decrypt__button decrypt__button--copy">
+                        <span class="decrypt__button-icon">
+                            <i class='bx bxs-copy-alt'></i>
+                        </span>
+                    </button>
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <nav class="footer__author">
+                <p class="footer__author-name">
+                    <a href="#" aria-label="Desarrollado por">DevGuy!</a>
+                </p>
+                <ul class="footer__author-network">
+                    <li class="footer__author-item">
+                        <a href="https://github.com/cjelovcic" target="_blank" rel="noopener noreferrer" aria-label="Mi Github" class="footer__author-link">
+                            <i class='bx bxl-github' aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="footer__author-item">
+                        <a href="https://linkedin.com/in/cristianjelovcic" target="_blank" rel="noopener noreferrer" aria-label="Mí LinkedIn" class="footer__author-link">
+                            <i class='bx bxl-linkedin' aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="footer__separator" aria-hidden="true">|</span>
+            <p class="footer__text"></p>
+        </footer>
+    </div>
+</body>
+</html>
